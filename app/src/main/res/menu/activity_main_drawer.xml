@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_ic"
+            android:font="@font/nunito_semibold"
+            android:textColor="#414B2B"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/nav_ic"
+            android:font="@font/nunito_semibold"
+            android:textColor="#414B2B"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/nav_ic"
+            android:font="@font/nunito_semibold"
+            android:textColor="#414B2B"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/nav_ic"
+            android:font="@font/nunito_semibold"
+            android:textColor="#414B2B"
+            android:title="@string/menu_tools" />
+
+        <item
+            android:textColor="#414B2B"
+            android:title="" />
+        <item
+            android:textColor="#414B2B"
+            android:title="" />
+
+    </group>
+
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/logout_icon"
+                android:font="@font/nunito_semibold"
+                android:textColor="#414B2B"
+                android:title="@string/menu_send" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ArmPen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Ahmed Karim</string>
+    <string name="nav_header_subtitle">dsjl</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">VERIFICATION</string>
+    <string name="menu_gallery">VERIFIED</string>
+    <string name="menu_slideshow">UNVERIFIED</string>
+    <string name="menu_tools">NOTIFICATION</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">LOGOUT ACCOUNT</string>
+    <string name="title_activity_verify">Verify</string>
+</resources>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/app_bar_main">
+    <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:fillViewport="true">-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/userInfoCard"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/row_wallet_redeem_img"
+                        android:layout_width="150dp"
+                        android:layout_height="173dp"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="left"
+                        android:layout_weight="0"
+
+                        android:src="@drawable/profile_avatarlg" />
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                        android:layout_gravity="center"
+                        android:orientation="vertical" >
+
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:fontFamily="@font/nunito_bold"
+                           android:gravity="center"
+                           android:text="Karim Ahmed"
+                           android:textColor="@color/main_color_grey_600"
+                           android:textSize="18sp"
+                           />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:fontFamily="@font/nunito_semibold"
+                            android:text=" @karimahmed"
+                            android:textColor="@color/main_color_grey_500"
+                            android:textSize="12sp"
+                            />
+                        <TextView
+                            android:id="@+id/militaryID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Military ID : XWUPZ"
+                            android:fontFamily="@font/nunito_regular"
+                            android:textColor="@color/main_color_grey_600"
+                            android:textSize="15sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="Status:Successful"
+                            android:textColor="@color/main_color_grey_600"
+                            android:textSize="15sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="Date: 24th sep 2019"
+                            android:textColor="@color/main_color_grey_600"
+                            android:textSize="15sp"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_regular"
+                            android:text="Time:06:23PM"
+                            android:textColor="@color/main_color_grey_600"
+                            android:textSize="15sp"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/userInfoCard"
+            app:srcCompat="@drawable/success_ic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="329dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:gravity="center"
+            android:text="Your Verification was successful!"
+            android:textColor="#7AAA1D"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.442"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="280dp"
+            android:layout_height="1dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="#22000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/yearlyProgress"
+            android:layout_width="137dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:gravity="center"
+            android:text="Yearly Progress"
+            android:textColor="@color/main_color_grey_600"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+        <RelativeLayout
+            android:id="@+id/progressCard"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yearlyProgress">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="172dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Unverified"
+                        android:textColor="@color/material_red_400"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:gravity="right"
+                        android:text="03"
+                        android:textColor="@color/material_red_400"
+                        android:textSize="21sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Verified"
+                        android:textColor="@color/material_blue_400"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:layout_width="74dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:gravity="right"
+                        android:text="09"
+                        android:textColor="@color/material_blue_400"
+                        android:textSize="21sp"
+
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Notifications"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="21sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:gravity="right"
+                        android:text="03"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="21sp"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="230dp"
+                android:layout_height="182dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="184dp"
+                android:layout_marginLeft="184dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginBottom="0dp"
+                >
+
+                <TextView
+                    android:id="@+id/fig"
+                    android:layout_width="119dp"
+                    android:layout_height="46dp"
+                    android:layout_alignStart="@+id/progressBar"
+                    android:layout_alignLeft="@+id/progressBar"
+                    android:layout_alignTop="@+id/progressBar"
+                    android:layout_alignEnd="@+id/progressBar"
+                    android:layout_alignRight="@+id/progressBar"
+                    android:layout_alignBottom="@+id/progressBar"
+                    android:layout_marginStart="41dp"
+                    android:layout_marginLeft="41dp"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginBottom="85dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="100%"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="151dp"
+                    android:layout_height="27dp"
+                    android:layout_alignStart="@+id/progressBar"
+                    android:layout_alignLeft="@+id/progressBar"
+                    android:layout_alignTop="@+id/progressBar"
+                    android:layout_alignEnd="@+id/progressBar"
+                    android:layout_alignRight="@+id/progressBar"
+                    android:layout_alignBottom="@+id/progressBar"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="87dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="64dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center"
+                    android:text="LEFT THIS YEAR : 0%"
+                    android:textColor="@color/material_blue_400"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/target"
+                    android:layout_width="136dp"
+                    android:layout_height="36dp"
+                    android:layout_alignStart="@+id/progressBar"
+                    android:layout_alignLeft="@+id/progressBar"
+                    android:layout_alignTop="@+id/progressBar"
+                    android:layout_alignEnd="@+id/progressBar"
+                    android:layout_alignRight="@+id/progressBar"
+                    android:layout_alignBottom="@+id/progressBar"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="123dp"
+                    android:layout_marginEnd="28dp"
+                    android:layout_marginRight="28dp"
+                    android:layout_marginBottom="42dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center"
+                    android:text="TARGET : 100%"
+                    android:textColor="@color/material_blue_400"
+                    android:textSize="10sp" />
+
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dp"
+                    android:layout_height="179dp"
+                    android:background="@drawable/circle_shape"
+                    android:indeterminate="false"
+                    android:max="1"
+                    android:progress="2"
+
+                    android:progressDrawable="@drawable/cicular_progress_bar" />
+
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
