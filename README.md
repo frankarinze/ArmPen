@@ -9,6 +9,6 @@ ArmPen is a demo military verification App using Android Biometric Authenticatio
   
   <div style=float:left>
 <h2>Armpen Home Activity</h2>
-<img src="home.jpg" width= 200>
+<img src="Home.jpg" width= 200>
   </div>
 </div>
